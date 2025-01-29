@@ -1,0 +1,39 @@
+.testimonial-header {
+  font-size: 38px;
+  margin-bottom: 40px;
+  color: #fff;
+  text-align: center;
+}
+.slider-wrapper {
+  max-width: 95vw;
+  margin: 0px 0 40px 0;
+}
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  font-size: 0px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.slick-prev {
+  left: 10px;
+}
+.slick-next {
+  right: 10px;
+}
+.innerBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98vw;
+}
+
+@media (max-width: 768px) {
+  .testimonial-header {
+    font-size: 30px;
+  }
+}

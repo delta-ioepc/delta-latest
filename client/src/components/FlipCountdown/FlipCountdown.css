@@ -1,0 +1,65 @@
+.hero-header {
+  font-size: 35px;
+  color: rgba(62, 74, 145, 0.7);
+  text-align: center;
+  margin-bottom: -20px;
+
+  /* cyberpunk theme */
+  /* color: #e0e0e0; */
+}
+.flip-clock {
+  --fcc-flip-duration: 0.5s;
+  --fcc-spacing: 8px;
+  --fcc-digit-block-width: 70px;
+  --fcc-digit-block-height: 100px;
+  --fcc-digit-block-radius: 8px;
+  --fcc-digit-block-spacing: 8px;
+  --fcc-digit-font-size: 50px;
+  --fcc-digit-color: #e8f0fe;
+  --fcc-label-font-size: 24px;
+  --fcc-label-color: rgba(62, 74, 145, 0.5);
+  --fcc-background: #7385c4;
+  --fcc-divider-color: rgba(255, 255, 255, 0.2);
+  --fcc-divider-height: 2px;
+  --fcc-separator-size: 8px;
+  --fcc-separator-color: #7385c4;
+
+  /* cyberpunk theme */
+  /* --fcc-background: #1e1e2e;
+  --fcc-digit-color: #ff073a;
+  --fcc-divider-color: rgba(255, 255, 255, 0.2);
+  --fcc-label-color: #ff007e;
+  --fcc-separator-color: #ff073a; */
+}
+
+@media (max-width: 700px) {
+  .flip-clock {
+    --fcc-digit-block-width: 50px;
+    --fcc-digit-block-height: 70px;
+    --fcc-digit-block-radius: 6px;
+    --fcc-digit-block-spacing: 5px;
+    --fcc-digit-font-size: 40px;
+    --fcc-label-font-size: 15px;
+    --fcc-divider-height: 1.5px;
+    --fcc-separator-size: 7px;
+  }
+  .hero-header {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 520px) {
+  .flip-clock {
+    --fcc-digit-block-width: 30px;
+    --fcc-digit-block-height: 50px;
+    --fcc-digit-block-radius: 5px;
+    --fcc-digit-block-spacing: 5px;
+    --fcc-digit-font-size: 30px;
+    --fcc-label-font-size: 10px;
+    --fcc-divider-height: 1px;
+    --fcc-separator-size: 6px;
+  }
+  .hero-header {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,49 @@
+.sponsors {
+  margin: var(--margin-top) 0 var(--margin-bottom) 0;
+}
+.tag {
+  margin-top: 60px;
+}
+.sponsors h1 {
+  color: var(--header-color);
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.sponsor-container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .sponsors {
+    margin-top: 90px;
+  }
+  .sponsors h1 {
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsors {
+    margin-top: 80px;
+  }
+  .sponsors h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsors {
+    margin-top: 65px;
+  }
+  .sponsors h1 {
+    margin-bottom: 20px;
+  }
+}

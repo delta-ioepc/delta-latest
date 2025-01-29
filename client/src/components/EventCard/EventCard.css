@@ -1,0 +1,131 @@
+.event-cards {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  align-items: stretch;
+  overflow: hidden;
+}
+.event-card {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 450px;
+  flex: 0.5;
+  border-radius: 40px;
+  position: relative;
+  cursor: pointer;
+  transition: flex 0.3s;
+  margin: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--border-color);
+}
+.event-card.active {
+  flex: 5;
+}
+.lower {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.event-card .event-card-title {
+  color: #fff;
+  position: absolute;
+  bottom: 25rem;
+  left: 1rem;
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.event-card.active .event-card-title {
+  opacity: 1;
+}
+.event-card .btn {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  right: 1rem;
+  z-index: 20;
+  animation: fadeIn 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+.event-card.active .btn {
+  display: block;
+}
+
+@media (max-width: 1190px) {
+  .event-card:not(.active) {
+    flex: 0.8;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .event-card {
+    height: 400px;
+  }
+  .event-card .event-card-title {
+    font-size: 16px;
+    bottom: 22rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .event-cards {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+    height: 625px;
+  }
+  .event-card {
+    border-radius: 35px;
+    margin: 15px;
+  }
+  .event-card:not(.active) {
+    flex: 1;
+  }
+  .event-card .event-card-title {
+    font-size: 16px;
+    bottom: 15rem;
+  }
+}
+
+@media screen and (max-width: 638px) {
+  .event-cards {
+    min-width: 440px;
+  }
+  .event-card .btn {
+    width: 100px;
+    height: 40px;
+    bottom: 0.5rem;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .event-card {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 558px) {
+  .event-cards {
+    min-width: 360px;
+  }
+}
+@media screen and (max-width: 478px) {
+  .event-cards {
+    min-width: 280px;
+  }
+  .event-card .event-card-title {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,63 @@
+.member-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--margin-top);
+}
+.member-container .cardBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.committee-header,
+.committee-top {
+  font-size: 48px;
+  color: var(--header-color);
+  text-align: center;
+}
+.team {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+@media (max-width: 1024px) {
+  .committee-header,
+  .committee-top {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 980px) {
+  .member-container {
+    margin-top: 80px;
+  }
+  .team {
+    margin: 25px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .member-container {
+    /* margin-top: 30px; */
+  }
+  .committee-header,
+  .committee-top {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .member-container {
+    margin-top: 65px;
+  }
+  .team {
+    margin: 20px 0;
+  }
+}

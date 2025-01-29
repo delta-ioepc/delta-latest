@@ -1,0 +1,132 @@
+.hero-section {
+  margin: 100px 0 40px 0;
+}
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo-text img {
+  height: 9rem;
+}
+.logo-text h1 {
+  font-size: 3.75rem;
+  line-height: 1;
+  color: var(--border-color);
+}
+.logo-text h1 span {
+  color: var(--header-color);
+}
+.logo-text p {
+  color: var(--border-color);
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.about-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 0 auto;
+  width: 85%;
+}
+.about-hero h1 {
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--border-color);
+}
+.about-hero h1 span {
+  color: var(--header-color);
+}
+.about-hero p {
+  font-size: 18px;
+  line-height: 1.75rem;
+  color: #5a647d;
+}
+.hero-section .swipe {
+  margin: 0 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .about-hero p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-text img {
+    height: 8rem;
+  }
+  .logo-text h1 {
+    font-size: 3rem;
+  }
+  .logo-text p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .about-hero p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-section {
+    margin-top: 80px;
+  }
+  .hero-section .swipe {
+    margin: 0 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .logo-text img {
+    height: 7rem;
+  }
+  .logo-text h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  .logo-text p {
+    font-size: 1.125rem;
+  }
+  .about-hero h1 {
+    font-size: 2.25rem;
+    line-height: 2.5;
+  }
+}
+
+@media (max-width: 470px) {
+  .hero-section {
+    margin-top: 70px;
+  }
+  .hero-section .swipe {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .hero-section .swipe {
+    margin: 0 10px;
+  }
+}
+
+/* @media (max-width: 400px) {
+  .hero-section .swipe {
+    margin: 0 10px;
+  }
+} */
+
+/* NEW */
+/* .logo-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-text img {
+  width: 25%;
+  height: auto;
+} */

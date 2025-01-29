@@ -1,0 +1,304 @@
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 0px 100px;
+  margin: var(--margin-top) 0 var(--margin-bottom) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+.contact .content h2 {
+  font-size: 48px;
+  color: var(--header-color);
+}
+.contact .content p {
+  font-size: 18px;
+  color: var(--font-color);
+}
+.contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+.contact-container .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.contact-container .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  cursor: pointer;
+}
+.contact-container .contactInfo .box .icon {
+  position: relative;
+  min-width: 60px;
+  height: 60px;
+  background: repeating-conic-gradient(
+    from 27.5deg,
+    var(--border-color) 0%,
+    var(--border-color) 10%,
+    transparent 10%,
+    transparent 50%
+  );
+  /* background: repeating-conic-gradient(
+    from 27.5deg,
+    #01dbc2 0%,
+    #01dbc2 10%,
+    transparent 10%,
+    transparent 50%
+  ); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container .contactInfo .box .icon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(
+    from 117.5deg,
+    var(--border-color) 0%,
+    var(--border-color) 10%,
+    transparent 10%,
+    transparent 50%
+  );
+  /* background: repeating-conic-gradient(
+    from 117.5deg,
+    #01dbc2 0%,
+    #01dbc2 10%,
+    transparent 10%,
+    transparent 50%
+  ); */
+}
+.contact-container .contactInfo .box .icon::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: var(--base-color);
+  /* background: #222; */
+}
+.contact-container .contactInfo .box .icon b {
+  position: absolute;
+  inset: 8px;
+  background: var(--border-color);
+  /* background: #01dbc2; */
+  z-index: 2;
+}
+.contact-container .contactInfo .box .icon .i {
+  position: relative;
+  z-index: 100;
+  color: #333;
+  /* color: #333; */
+  font-size: 1.25em;
+}
+.contact-container .contactInfo .box .text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-size: 1.1em;
+  color: var(--font-color);
+  font-weight: 300;
+}
+.contact-container .contactInfo .box .text h3 {
+  font-weight: 500;
+  color: var(--font-color);
+}
+.contact-container .contactInfo .txt {
+  color: var(--font-color);
+  margin-top: 50px;
+  font-weight: 500;
+  border-left: 50px solid #01dbc2;
+  padding-left: 10px;
+  line-height: 1em;
+}
+.contact-container .contactInfo .sci {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  margin: 20px 0;
+}
+.contact-container .contactInfo .sci li {
+  list-style: none;
+}
+.contact-container .contactInfo .sci li a {
+  color: var(--font-color);
+  font-size: 1.5em;
+  transition: 0.25s;
+}
+.contact-container .contactInfo .sci li a:hover {
+  color: #01dbc2;
+  filter: drop-shadow(0 0 5px #01dbc2);
+}
+.contact-container .contactForm {
+  position: relative;
+  width: 40%;
+  background: repeating-conic-gradient(
+    from var(--a),
+    #01dbc2 0%,
+    #01dbc2 10%,
+    transparent 10%,
+    transparent 50%
+  );
+  animation: animate 6s linear infinite;
+  padding: 60px;
+}
+.contact-container .contactForm::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(
+    from var(--a),
+    #01dbc2 0%,
+    #01dbc2 10%,
+    transparent 10%,
+    transparent 50%
+  );
+  animation: animate 6s linear infinite;
+  animation-delay: -1.5s;
+}
+.contact-container .contactForm::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border: 20px solid #222;
+  background: #333;
+}
+@property --a {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+@keyframes animate {
+  0% {
+    --a: 0deg;
+  }
+  100% {
+    --a: 360deg;
+  }
+}
+.contact-container .contactForm form {
+  position: relative;
+  z-index: 10;
+}
+.contact-container .contactForm form h2 {
+  font-size: 2em;
+  color: #fff;
+  font-weight: 500;
+}
+.contact-container .contactForm form .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+.contact-container .contactForm form .inputBox input,
+.contact-container .contactForm form .inputBox textarea {
+  width: 100% !important;
+  padding: 5px 0;
+  font-size: 1.1em;
+  margin: 10px 0;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #01dbc2;
+  color: #fff;
+  outline: none;
+  resize: none;
+}
+.contact-container .contactForm form .inputBox span {
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  padding: 5px 0;
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #fff;
+  transition: 0.5s;
+}
+.contact-container .contactForm form .inputBox input:focus ~ span,
+.contact-container .contactForm form .inputBox textarea:focus ~ span,
+.contact-container .contactForm form .inputBox input:valid ~ span,
+.contact-container .contactForm form .inputBox textarea:valid ~ span {
+  color: #01dbc2;
+  font-size: 0.9em;
+  transform: translateY(-24px);
+}
+.contact-container .contactForm form .inputBox input[type="submit"] {
+  width: 100%;
+  background: #01dbc2;
+  color: #222;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+.custom-toast {
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .contact .content h2 {
+    font-size: 36px;
+  }
+  .contact .content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact {
+    padding: 50px;
+  }
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-container .contactInfo {
+    width: 100%;
+  }
+  .contact-container .contactForm {
+    width: 100%;
+  }
+  .contact-container .contactForm {
+    padding: 40px;
+  }
+  .contact-container .contactForm form {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact .content h2 {
+    font-size: 30px;
+  }
+  .contact .content p {
+    font-size: 14px;
+  }
+  .custom-toast {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container .contactForm {
+    width: 120%;
+  }
+  .custom-toast {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .custom-toast {
+    font-size: 10px;
+  }
+}

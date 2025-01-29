@@ -1,0 +1,90 @@
+.sponsor-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(167, 199, 242, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 8px;
+  padding: 10px;
+}
+.sponsor-card .imgBx {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  transition: 0.5s ease-in-out;
+}
+.sponsor-card:hover .imgBx {
+  transform: translateY(-10px);
+  transition: all 6s ease;
+}
+.sponsor-card .imgBx img {
+  max-width: 80%;
+  width: 210px;
+  height: auto;
+  margin: 0 0 20px;
+  transition: 0.5s ease-in-out;
+}
+.sponsor-card:hover .imgBx img {
+  transform: translate(-10px, -40px) rotate(-360deg) scale(1.2);
+}
+.sponsor-card .imgBx h2 {
+  color: var(--font-color);
+  font-weight: 600;
+  font-size: 18px;
+}
+.sponsor-card:hover .imgBx h2 {
+  transform: translateY(-55px);
+}
+.sponsor-card .content {
+  position: absolute;
+  bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+.sponsor-card:hover .content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+@media (max-width: 1024px) {
+  .sponsor-card {
+    width: 270px;
+    height: 180px;
+  }
+  .sponsor-card .imgBx img {
+    width: 100px;
+    max-width: 70%;
+  }
+  .sponsor-card .imgBx h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsor-card {
+    width: 220px;
+    height: 160px;
+  }
+  .sponsor-card .imgBx img {
+    width: 80px;
+    max-width: 60%;
+  }
+  .sponsor-card .imgBx h2 {
+    font-size: 14px;
+  }
+}

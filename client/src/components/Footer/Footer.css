@@ -1,0 +1,316 @@
+footer {
+  width: 100%;
+  background: rgba(167, 199, 242, 0.2);
+  backdrop-filter: blur(10px);
+  border-top: 2px solid var(--border-color);
+  z-index: 50;
+  color: var(--font-color);
+  padding: 30px 0 30px;
+  font-size: 14px;
+  line-height: 20px;
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+  overflow: hidden;
+
+  /* Cyberpunk theme */
+  /* border-top: 2px solid #00ffc8;
+  color: #ffc300; */
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(167, 199, 242, 0.4),
+    transparent
+  );
+  transition: 0.5s;
+
+  /* Cyberpunk theme */
+  /* background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(167, 199, 242, 0.4),
+    transparent
+  ); */
+}
+.footer:hover::before {
+  left: 100%;
+}
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col {
+  flex-basis: 25%;
+  padding: 0 10px;
+}
+.col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
+}
+.logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+.col h3 {
+  width: fit-content;
+  margin-bottom: 30px;
+  position: relative;
+  font-size: 20px;
+
+  /* Cyberpunk theme */
+  /* color: #ff073a; */
+}
+.underline {
+  width: 100%;
+  height: 5px;
+  background: var(--border-color);
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+
+  /* Cyberpunk theme */
+  /* background: #1e1e2e; */
+}
+.underline span {
+  width: 15px;
+  height: 100%;
+  background: var(--font-color);
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+
+  /* Cyberpunk theme */
+  /* background: #ff073a; */
+}
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100px;
+  }
+}
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid var(--border-color);
+  margin: 20px 0;
+
+  /* Cyberpunk theme */
+  /* border-bottom: 1px solid #00ffc8; */
+}
+.email-id:hover a {
+  font-weight: 700;
+}
+.email-id:active a {
+  color: var(--font-color);
+
+  /* Cyberpunk theme */
+  /* color: linear-gradient(90deg, #ff073a, #ff6a00); */
+}
+ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+a {
+  text-decoration: none;
+
+  /* cyberpunk theme */
+  /* color: #ffc300; */
+}
+a:hover {
+  font-weight: 700;
+}
+a:active {
+  color: var(--font-color);
+
+  /* Cyberpunk theme */
+  /* color: linear-gradient(90deg, #ff073a, #ff6a00); */
+}
+.footer-form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 30px;
+
+  /* Cyberpunk theme */
+  /* border-bottom: 1px solid #00ffc8; */
+}
+form .mailIcon {
+  font-size: 30px;
+  margin-right: 10px;
+}
+form input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: none;
+  color: var(--font-color);
+
+  /* Cyberpunk theme */
+  /* color: #ffc300; */
+}
+form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+form button .arrowIcon {
+  font-size: 30px;
+  color: var(--font-color);
+
+  /* Cyberpunk theme */
+  /* color: #ffc300; */
+}
+.social-icons {
+  display: flex;
+}
+.iconBox {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--font-color);
+  cursor: pointer;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  /* Cyberpunk theme */
+  /* background: #1e1e2e;
+  border: 1px solid #00ffc8; */
+}
+.social-icons .fa {
+  line-height: 40px;
+  font-size: 24px;
+  color: var(--base-color);
+
+  /* Cyberpunk theme */
+  /* color: #ffc300; */
+}
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid var(--border-color);
+  margin: 20px auto;
+
+  /* Cyberpunk theme */
+  /* border-bottom: 1px solid #00ffc8; */
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 110px;
+}
+.bottom a {
+  font-weight: 700;
+}
+.bottom a:active {
+  color: var(--font-color);
+
+  /* Cyberpunk theme */
+  /* color: linear-gradient(90deg, #ff073a, #ff6a00); */
+}
+
+@media (max-width: 940px) {
+  .col {
+    padding: 10px 10px;
+  }
+  .col h3 {
+    font-size: 18px;
+  }
+  form .mailIcon {
+    font-size: 28px;
+  }
+  form button .arrowIcon {
+    font-size: 28px;
+  }
+  .iconBox {
+    width: 38px;
+    height: 38px;
+  }
+  .social-icons .fa {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 915px) {
+  .col:nth-child(1) {
+    flex-basis: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    font-size: 12px;
+  }
+  .col {
+    flex-basis: 100%;
+  }
+  .col:nth-child(1),
+  .col:nth-child(2),
+  .col:nth-child(3) {
+    flex-basis: 100%;
+  }
+  .col h3 {
+    font-size: 16px;
+  }
+  form .mailIcon {
+    font-size: 24px;
+  }
+  form button .arrowIcon {
+    font-size: 24px;
+  }
+  .iconBox {
+    width: 34px;
+    height: 34px;
+  }
+  .social-icons .fa {
+    font-size: 18px;
+  }
+  .bottom {
+    margin: 0 70px;
+  }
+}
+
+@media (max-width: 580px) {
+  .bottom {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 455px) {
+  .bottom {
+    flex-direction: column;
+  }
+}
+
+/* Cyberpunk theme */
+/* footer:hover {
+  border-top-color: #ff007e;
+}
+.social-icons .fa:hover {
+  color: #ff6a00;
+}
+.email-id a {
+  color: #ffc300;
+} */
