@@ -5,7 +5,7 @@ const VideoPlayer = () => {
   return (
     <>
       <video className="video" controls>
-        <source src="/promo-video.mp4" />
+        {/* <source src="/promo-video.mp4" /> */}
       </video>
     </>
   );

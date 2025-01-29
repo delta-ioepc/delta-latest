@@ -3,7 +3,7 @@ import "./Hero.css";
 import FlipCountdown from "../FlipCountdown/FlipCountdown";
 import ImageSwiper from "../ImageSwiper/ImageSwiper";
 import AutoplaySlider from "../AutoplaySlider/AutoplaySlider";
-import VideoPlayer from "../VideoPlayer/VideoPlayer";
+// import VideoPlayer from "../VideoPlayer/VideoPlayer";
 import { societies } from "../../assets/data/societies";
 import { sliderSponsors } from "../../assets/data/sponsors";
 import Button from "../Button/Button";
@@ -20,7 +20,7 @@ const Hero = () => {
           </h1>
           <p>National Level TechFest</p>
         </div>
-        <VideoPlayer />
+        {/* <VideoPlayer /> */}
         <div className="about-hero">
           <h1>
             About <span>DELTA</span>
