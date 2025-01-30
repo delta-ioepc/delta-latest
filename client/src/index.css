@@ -20,13 +20,16 @@ body {
   position: relative;
   z-index: 1;
   min-height: 100vh;
-  background: var(--base-color);
+  /* background: var(--base-color); */
   background-size: cover;
   background-position: center;
   height: 100%;
 
   /* Cyberpunk theme */
   /* background: #0c0c0c; */
+
+  /* Cyberpunk green */
+  background: #0a0a0a;
 }
 
 /* background: #061a40; */

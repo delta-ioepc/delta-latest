@@ -11,6 +11,10 @@
   align-items: center;
   backdrop-filter: blur(10px);
   padding: 15px;
+
+  /* Cyberpunk green */
+  background-color: #2a2a2a;
+  border: 2px solid #00ff85;
 }
 .committee-card .content {
   position: relative;
@@ -52,12 +56,20 @@
   text-align: center;
   margin-top: 10px;
   line-height: 1.1em;
+
+  /* Cyberpunk green */
+  color: #a1ffe4;
+  text-shadow: 0 0 4px #a1ffe4;
 }
 .committee-card .content .contentBx h3 span {
   font-size: 16px;
   font-weight: normal;
   text-transform: initial;
   margin-top: 5px;
+
+  /* Cyberpunk green */
+  color: #00d1b2;
+  text-shadow: none;
 }
 .committee-card .sci {
   position: absolute;
@@ -79,6 +91,14 @@
 .committee-card .sci li a {
   color: var(--font-color);
   font-size: 28px;
+
+  /* Cyberpunk green */
+  color: #00ff85;
+}
+.committee-card .sci li a:hover {
+  /* Cyberpunk green */
+  color: #7d00ff;
+  box-shadow: 0 0 6px;
 }
 
 @media (max-width: 1024px) {

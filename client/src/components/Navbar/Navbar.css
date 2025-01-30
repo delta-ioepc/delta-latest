@@ -17,10 +17,10 @@
   left: 5vw;
   border-radius: 50px 50px 50px 50px;
 
-  /* Cyberpunk theme */
-  /* background: #1e1e2e;
-  border-bottom: 2px solid #00ffc8;
-  border-top: 2px solid #00ffc8; */
+  /* Cyberpunk green */
+  background: #006644;
+  border-bottom: 2px solid #00ff85;
+  border-top: 2px solid #00ff85;
 }
 .header::before {
   content: "";
@@ -29,12 +29,12 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     transparent,
     rgba(167, 199, 242, 0.4),
     transparent
-  );
+  ); */
   transition: 0.5s;
 
   /* Cyberpunk theme */
@@ -59,15 +59,15 @@
   transition: 0.3s;
   z-index: 1000;
 
-  /* Cyberpunk theme */
-  /* color: #ffc300; */
+  /* Cyberpunk green */
+  color: #a1ffe4;
 }
 .navbar a:hover {
   color: #2e3b6d;
   font-weight: 700;
 
   /* Cyberpunk theme */
-  /* color: #ff6a00; */
+  color: #00ff85;
 }
 #menu-icon {
   font-size: 36px;
@@ -76,7 +76,7 @@
   z-index: 2;
 
   /* Cyberpunk theme */
-  /* color: #ffc300; */
+  color: #a1ffe4;
 }
 .nav-bg {
   display: none;
@@ -130,12 +130,12 @@
     width: 50%;
     height: auto;
     background: rgba(255, 255, 255, 0.7);
-    border-left: 2px solid var(--border-color);
+    /* border-left: 2px solid var(--border-color); */
     backdrop-filter: blur(10px);
     display: none;
 
     /* Cyberpunk theme */
-    /* background: linear-gradient(180deg, #1e1e2e 0%, #0c0c0c 100%); */
+    background: #006644;
   }
   .nav-bg.active {
     display: block;
@@ -154,9 +154,3 @@
     font-size: 25px;
   }
 }
-
-/* Cyberpunk theme */
-/* .header:hover {
-  border-bottom: 2px solid #ff007e;
-  border-top: 2px solid #ff007e;
-} */

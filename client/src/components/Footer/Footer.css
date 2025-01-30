@@ -12,9 +12,10 @@ footer {
   border-top-right-radius: 75px;
   overflow: hidden;
 
-  /* Cyberpunk theme */
-  /* border-top: 2px solid #00ffc8;
-  color: #ffc300; */
+  /* Cyberpunk green */
+  background: #2a2a2a;
+  color: #a1ffe4;
+  border-top: 2px solid #00ff85;
 }
 .footer::before {
   content: "";
@@ -23,21 +24,16 @@ footer {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(167, 199, 242, 0.4),
-    transparent
-  );
-  transition: 0.5s;
-
-  /* Cyberpunk theme */
   /* background: linear-gradient(
     90deg,
     transparent,
     rgba(167, 199, 242, 0.4),
     transparent
   ); */
+  transition: 0.5s;
+
+  /* Cyberpunk green */
+  /* background: linear-gradient(90deg, transparent, #00ff85, transparent); */
 }
 .footer:hover::before {
   left: 100%;
@@ -68,8 +64,9 @@ footer {
   position: relative;
   font-size: 20px;
 
-  /* Cyberpunk theme */
-  /* color: #ff073a; */
+  /* Cyberpunk green */
+  color: #7d00ff;
+  -webkit-text-stroke: 2px #00d1b2;
 }
 .underline {
   width: 100%;
@@ -81,8 +78,8 @@ footer {
   left: 0;
   overflow: hidden;
 
-  /* Cyberpunk theme */
-  /* background: #1e1e2e; */
+  /* Cyberpunk green */
+  background: #0a0a0a;
 }
 .underline span {
   width: 15px;
@@ -94,8 +91,8 @@ footer {
   left: 10px;
   animation: moving 2s linear infinite;
 
-  /* Cyberpunk theme */
-  /* background: #ff073a; */
+  /* Cyberpunk green */
+  background: #00ff85;
 }
 @keyframes moving {
   0% {
@@ -110,17 +107,11 @@ footer {
   border-bottom: 1px solid var(--border-color);
   margin: 20px 0;
 
-  /* Cyberpunk theme */
-  /* border-bottom: 1px solid #00ffc8; */
+  /* Cyberpunk green */
+  border-bottom: 1px solid #00ff85;
 }
 .email-id:hover a {
   font-weight: 700;
-}
-.email-id:active a {
-  color: var(--font-color);
-
-  /* Cyberpunk theme */
-  /* color: linear-gradient(90deg, #ff073a, #ff6a00); */
 }
 ul li {
   list-style: none;
@@ -129,8 +120,8 @@ ul li {
 a {
   text-decoration: none;
 
-  /* cyberpunk theme */
-  /* color: #ffc300; */
+  /* Cyberpunk green */
+  color: #00d1b2;
 }
 a:hover {
   font-weight: 700;
@@ -138,8 +129,8 @@ a:hover {
 a:active {
   color: var(--font-color);
 
-  /* Cyberpunk theme */
-  /* color: linear-gradient(90deg, #ff073a, #ff6a00); */
+  /* Cyberpunk green */
+  color: #b3ff00;
 }
 .footer-form {
   padding-bottom: 15px;
@@ -149,8 +140,8 @@ a:active {
   border-bottom: 1px solid var(--border-color);
   margin-bottom: 30px;
 
-  /* Cyberpunk theme */
-  /* border-bottom: 1px solid #00ffc8; */
+  /* Cyberpunk green */
+  border-bottom: 1px solid #00ff85;
 }
 form .mailIcon {
   font-size: 30px;
@@ -163,8 +154,8 @@ form input {
   outline: none;
   color: var(--font-color);
 
-  /* Cyberpunk theme */
-  /* color: #ffc300; */
+  /* Cyberpunk green */
+  color: #a1ffe4;
 }
 form button {
   background: transparent;
@@ -176,8 +167,8 @@ form button .arrowIcon {
   font-size: 30px;
   color: var(--font-color);
 
-  /* Cyberpunk theme */
-  /* color: #ffc300; */
+  /* Cyberpunk green */
+  color: #a1ffe4;
 }
 .social-icons {
   display: flex;
@@ -194,17 +185,25 @@ form button .arrowIcon {
   align-items: center;
   padding: 10px;
 
-  /* Cyberpunk theme */
-  /* background: #1e1e2e;
-  border: 1px solid #00ffc8; */
+  /* Cyberpunk green */
+  background: #006644;
+  border: 1px solid #00ff85;
+}
+.iconBox:hover {
+  /* Cyberpunk green */
+  background: #00d1b2;
 }
 .social-icons .fa {
   line-height: 40px;
   font-size: 24px;
   color: var(--base-color);
 
-  /* Cyberpunk theme */
-  /* color: #ffc300; */
+  /* Cyberpunk green */
+  color: #00ff85;
+}
+.iconBox:hover .fa {
+  /* Cyberpunk green */
+  color: #7d00ff;
 }
 hr {
   width: 90%;
@@ -212,8 +211,8 @@ hr {
   border-bottom: 1px solid var(--border-color);
   margin: 20px auto;
 
-  /* Cyberpunk theme */
-  /* border-bottom: 1px solid #00ffc8; */
+  /* Cyberpunk green */
+  border-bottom: 1px solid #00ff85;
 }
 .bottom {
   display: flex;
@@ -223,12 +222,6 @@ hr {
 }
 .bottom a {
   font-weight: 700;
-}
-.bottom a:active {
-  color: var(--font-color);
-
-  /* Cyberpunk theme */
-  /* color: linear-gradient(90deg, #ff073a, #ff6a00); */
 }
 
 @media (max-width: 940px) {
@@ -303,14 +296,3 @@ hr {
     flex-direction: column;
   }
 }
-
-/* Cyberpunk theme */
-/* footer:hover {
-  border-top-color: #ff007e;
-}
-.social-icons .fa:hover {
-  color: #ff6a00;
-}
-.email-id a {
-  color: #ffc300;
-} */

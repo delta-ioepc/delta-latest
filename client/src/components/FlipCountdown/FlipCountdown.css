@@ -5,7 +5,8 @@
   margin-bottom: -20px;
 
   /* cyberpunk theme */
-  /* color: #e0e0e0; */
+  color: #ccff00;
+  -webkit-text-stroke: 2px #00ff85;
 }
 .flip-clock {
   --fcc-flip-duration: 0.5s;
@@ -25,11 +26,11 @@
   --fcc-separator-color: #7385c4;
 
   /* cyberpunk theme */
-  /* --fcc-background: #1e1e2e;
-  --fcc-digit-color: #ff073a;
+  --fcc-background: #2a2a2a;
+  --fcc-digit-color: #00d1b2;
   --fcc-divider-color: rgba(255, 255, 255, 0.2);
-  --fcc-label-color: #ff007e;
-  --fcc-separator-color: #ff073a; */
+  --fcc-label-color: #a1ffe4;
+  --fcc-separator-color: #00d1b2;
 }
 
 @media (max-width: 700px) {

@@ -16,6 +16,10 @@
   font-size: 48px;
   color: var(--header-color);
   text-align: center;
+
+  /* Cyberpunk green */
+  color: #7d00ff;
+  -webkit-text-stroke: 2px #00d1b2;
 }
 .team {
   position: relative;
@@ -44,9 +48,6 @@
 }
 
 @media (max-width: 768px) {
-  .member-container {
-    /* margin-top: 30px; */
-  }
   .committee-header,
   .committee-top {
     font-size: 30px;

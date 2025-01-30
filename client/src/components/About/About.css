@@ -7,8 +7,9 @@
   font-size: 48px;
   text-align: center;
 
-  /* cyberpunk theme */
-  /* color: #ff073a; */
+  /* cyberpunk green */
+  color: #7d00ff;
+  -webkit-text-stroke: 2px #00d1b2;
 }
 .container {
   display: flex;
@@ -49,8 +50,9 @@
   margin-bottom: 5px;
   color: var(--font-color);
 
-  /* cyberpunk theme */
-  /* color: #e0e0e0; */
+  /* cyberpunk green */
+  color: #ccff00;
+  -webkit-text-stroke: 2px #00ff85;
 }
 .hero-content p {
   font-size: 18px;
@@ -58,8 +60,8 @@
   margin-bottom: 40px;
   color: #5a647d;
 
-  /* cyberpunk theme */
-  /* color: #e0e0e0; */
+  /* cyberpunk green */
+  color: #a1ffe4;
 }
 .hero-image {
   flex: 1;
@@ -82,6 +84,7 @@
   width: 100%;
   border-radius: 10px;
   height: 350px;
+  border: 2px solid #00ff85;
 }
 
 @media (max-width: 1024px) {

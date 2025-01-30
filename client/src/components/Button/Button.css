@@ -17,6 +17,11 @@
   transition-delay: 0s;
   box-shadow: 0 0 5px var(--font-color), 0 0 15px var(--font-color),
     0 0 30px var(--font-color), 0 0 60px var(--font-color);
+
+  /* Cyberpunk green */
+  background: #ccff00;
+  box-shadow: 0 0 5px #ccff00, 0 0 15px #ccff00, 0 0 30px #ccff00,
+    0 0 60px #ccff00;
 }
 .btn::after {
   content: "";
@@ -32,6 +37,11 @@
   transition-delay: 0s;
   box-shadow: 0 0 5px var(--font-color), 0 0 15px var(--font-color),
     0 0 30px var(--font-color), 0 0 60px var(--font-color);
+
+  /* Cyberpunk green */
+  background: #ccff00;
+  box-shadow: 0 0 5px #ccff00, 0 0 15px #ccff00, 0 0 30px #ccff00,
+    0 0 60px #ccff00;
 }
 .btn:hover::before {
   bottom: 0;
@@ -69,10 +79,18 @@
   overflow: hidden;
   transition: 0.5s;
   backdrop-filter: blur(15px);
+
+  /* Cyberpunk green */
+  border-top: 1px solid #00ff85;
+  border-bottom: 1px solid #00ff85;
+  color: #a1ffe4;
 }
 .btn:hover a {
   letter-spacing: 3px;
   color: #fff;
+
+  /* Cyberpunk green */
+  color: #7d00ff;
 }
 .btn a::before {
   content: "";

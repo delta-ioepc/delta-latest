@@ -18,6 +18,9 @@
   margin: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   border: 2px solid var(--border-color);
+
+  /* Cyberpunk green */
+  border: 2px solid #00ff85;
 }
 .event-card.active {
   flex: 5;
@@ -38,6 +41,9 @@
   transition: opacity 0.5s;
   font-size: 18px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+  /* Cyberpunk green */
+  color: #7d00ff;
 }
 .event-card.active .event-card-title {
   opacity: 1;

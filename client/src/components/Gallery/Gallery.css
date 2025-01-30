@@ -13,6 +13,10 @@
 .gallery-container .heading h3 {
   color: var(--header-color);
   font-size: 48px;
+
+  /* Cyberpunk green */
+  color: #7d00ff;
+  -webkit-text-stroke: 2px #00d1b2;
 }
 .gallery-container .box {
   display: flex;
@@ -30,6 +34,9 @@
   border-radius: 10px;
   margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* Cyberpunk green */
+  border: 2px solid #00ff85;
 }
 
 @media (max-width: 1024px) {

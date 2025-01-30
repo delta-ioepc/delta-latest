@@ -59,6 +59,9 @@
   position: relative;
   -webkit-text-stroke: 2px var(--font-color);
   color: transparent;
+
+  /* Cyberpunk green */
+  -webkit-text-stroke: 2px #7d00ff;
 }
 .banner .content .model {
   width: 100%;
@@ -84,6 +87,9 @@
     width: 100%;
     text-shadow: 0 10px 20px var(--header-color);
     font-size: 7em;
+
+    /* Cyberpunk green */
+    text-shadow: 0 10px 20px #00d1b2;
   }
 }
 

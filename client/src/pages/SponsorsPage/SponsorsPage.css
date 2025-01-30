@@ -9,6 +9,10 @@
   font-size: 48px;
   text-align: center;
   margin-bottom: 50px;
+
+  /* Cyberpunk green */
+  color: #7d00ff;
+  -webkit-text-stroke: 2px #00d1b2;
 }
 .sponsor-container {
   position: relative;
